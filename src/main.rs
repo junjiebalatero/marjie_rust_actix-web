@@ -9,7 +9,7 @@ use actix_web::{server, App, HttpRequest, Responder};
 use std::env;
 
 fn greet(req: &HttpRequest) -> impl Responder {
-    let to = req.match_info().get("name").unwrap_or("Marjie Rust Website");
+    let to = req.match_info().get("name").unwrap_or("Sometimes things become possible if we want them bad enough");
     format!("Welcome to {}!", to)
 }
 
